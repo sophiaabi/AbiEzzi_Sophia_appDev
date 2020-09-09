@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="daVinci" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="unicorn" translatesAutoresizingMaskIntoConstraints="NO" id="NtY-ox-xzC">
+                                <rect key="frame" x="57.5" y="172.5" width="299" height="407.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="NtY-ox-xzC" secondAttribute="height" multiplier="11:15" id="EL2-Cg-aGZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Brain" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYp-vv-uNh">
+                                <rect key="frame" x="150" y="61" width="114.5" height="33.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="95" translatesAutoresizingMaskIntoConstraints="NO" id="D4t-aB-ThX">
+                                <rect key="frame" x="89" y="117.5" width="236" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DE3-CI-zUr">
+                                        <rect key="frame" x="0.0" y="0.0" width="66" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Left Brain">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="chooseLeft:" destination="BYZ-38-t0r" eventType="touchUpInside" id="am9-pw-Vn6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsc-R7-Id5">
+                                        <rect key="frame" x="161" y="0.0" width="75" height="30"/>
+                                        <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <state key="normal" title="Right Brain">
+                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="chooseLeft:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Se-qG-dm6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" text="This is a brain." textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZRE-OR-EYZ">
+                                <rect key="frame" x="160" y="600" width="94" height="19"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="sYp-vv-uNh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="17" id="5v9-AD-rWa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ZRE-OR-EYZ" secondAttribute="bottom" constant="15" id="7vA-XF-EnR"/>
+                            <constraint firstItem="NtY-ox-xzC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9G3-L0-VVd"/>
+                            <constraint firstItem="NtY-ox-xzC" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.782609" constant="-25" id="QJE-ju-byQ"/>
+                            <constraint firstItem="NtY-ox-xzC" firstAttribute="top" secondItem="D4t-aB-ThX" secondAttribute="bottom" constant="25" id="UCh-wR-87A"/>
+                            <constraint firstItem="ZRE-OR-EYZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cJp-V7-BKZ"/>
+                            <constraint firstItem="D4t-aB-ThX" firstAttribute="top" secondItem="sYp-vv-uNh" secondAttribute="bottom" constant="23" id="d8l-CQ-6Co"/>
+                            <constraint firstItem="sYp-vv-uNh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ghQ-uf-oOf"/>
+                            <constraint firstItem="NtY-ox-xzC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nfc-7Y-UYh"/>
+                            <constraint firstItem="ZRE-OR-EYZ" firstAttribute="top" secondItem="NtY-ox-xzC" secondAttribute="bottom" constant="20" id="ozn-pP-Uvo"/>
+                            <constraint firstItem="ZRE-OR-EYZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rRd-bH-LMD"/>
+                            <constraint firstItem="D4t-aB-ThX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z2J-om-LUC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="artImage" destination="NtY-ox-xzC" id="Ldy-hS-Ccu"/>
+                        <outlet property="brainText" destination="ZRE-OR-EYZ" id="s7E-gU-fPa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.23188405797103" y="117.85714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="unicorn" width="286.66665649414062" height="232.66667175292969"/>
+    </resources>
+</document>
