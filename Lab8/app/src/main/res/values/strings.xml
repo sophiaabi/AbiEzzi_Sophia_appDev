@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Lab8</string>
+    <string name="burger_heading">Vote for Burgers</string>
+    <string name="cheeseBurger">Cheeseburger</string>
+    <string name="hamBurger">Hamburger</string>
+    <string name="veggieBurger">Veggieburger</string>
+    <string name="createButton">Create Burger</string>
+    <string name="tomato">Tomato</string>
+    <string name="onion">Onion</string>
+    <string name="lettuce">Lettuce</string>
+    <string name="pickle">Pickle</string>
+    <string name="glutenFree">Gluten Free</string>
+    <string-array name="friesSize">
+        <item>Size of Fries</item>
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+</resources>
