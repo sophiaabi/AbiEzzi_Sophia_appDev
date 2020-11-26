@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Expire Time</string>
+    <string name="addTitle">Add Food</string>
+    <string name="foodName">Food Name</string>
+    <string name="expireDate">Expiration Date</string>
+    <string name="Add">Add</string>
+    <string name="dash">-</string>
+    <string name="daysLeft">Days Left</string>
+    <string name="dayLeft">Day Left</string>
+</resources>
