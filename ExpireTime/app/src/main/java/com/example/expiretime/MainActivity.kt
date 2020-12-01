@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
             startActivityForResult(intent, REQUEST_CODE)
         }
 
+
     }
 
     //tutorial I used for the swipe to delete method: https://www.youtube.com/watch?v=rcSNkSJ624U
@@ -118,6 +119,12 @@ class MainActivity : AppCompatActivity() {
                 DividerItemDecoration.VERTICAL
             )
         )
+        if(foodList.isEmpty()){
+            noFoodTextView.text = getString(R.string.noFoodMessage)
+        }
+        else{
+            noFoodTextView.text = ""
+        }
 
     }
 

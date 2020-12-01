@@ -7,4 +7,5 @@
     <string name="dash">-</string>
     <string name="daysLeft">Days Left</string>
     <string name="dayLeft">Day Left</string>
+    <string name="noFoodMessage">It looks like you do not have anything in your food list!</string>
 </resources>
