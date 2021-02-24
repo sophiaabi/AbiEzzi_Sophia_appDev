@@ -1,3 +1,3 @@
-# AbiEzzi_Sophia_appDev
+# Application Development
 
-ExpireTime is my project 2
+Repository containing all of the applications I have developed, both for Android and iOS.
